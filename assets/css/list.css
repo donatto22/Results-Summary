@@ -1,0 +1,42 @@
+/* estilando las listas */
+#summary ul {
+    margin: 1em 0;
+}
+
+#summary ul li {
+    padding: 12px 20px;
+    border-radius: 10px;
+    list-style-type: none;
+}
+
+#summary ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#summary ul li span {
+    color: var(--dark-gray-blue);
+}
+
+/* primer item */
+#summary ul li:nth-child(1) {
+    color: var(--light-red);
+    background-color: rgba(255, 87, 87, 0.05);
+}
+
+/* segundo item */
+#summary ul li:nth-child(2) {
+    color: var(--orangey-yellow);
+    background-color: rgba(255, 177, 31, 0.05);
+}
+
+/* tercer item */
+#summary ul li:nth-child(3) {
+    color: var(--green-teal);
+    background-color: rgba(0, 189, 145, 0.05);
+}
+
+/* cuarto item */
+#summary ul li:nth-child(4) {
+    color: var(--cobalt-blue);
+    background-color: rgba(17, 37, 212, 0.05);
+}

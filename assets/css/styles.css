@@ -1,25 +1,28 @@
 /* Hanken Grotesk */
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('./list.css');
+
 :root {
   /* fuente de letra */
   --font-global: "Hanken Grotesk", sans-serif;
 
   /* primarios */
-  --light-red: hsl(0, 100%, 67%);
-  --orangey-yellow: hsl(39, 100%, 56%);
-  --green-teal: hsl(166, 100%, 37%);
-  --cobalt-blue: hsl(234, 85%, 45%);
+  --light-red: #ff5757;
+  --orangey-yellow: #ffb01f;
+  --green-teal: #00bd91;
+  --cobalt-blue: #1125d4;
+
+  /* primarios del fondo de cada item de la lista */
+  --red: #E7E7E7;
+
 
   /* gradientes */
-  --Light-slate-blue: hsl(252, 100%, 67%);
-  --Light-royal-blue: hsl(241, 81%, 54%);
-  --Violet-blue: hsla(256, 72%, 46%, 1);
-  --persian-blue: hsla(241, 72%, 46%, 0);
+  --gradient: linear-gradient(#7755FF 0%, #6943FF 0%, #2F2CE9 100%);
 
   /* neutrales */
   --white: hsl(0, 0%, 100%);
-  --pale-blue: hsl(221, 100%, 96%);
+  --pale-blue: #ebf1ff;
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
 }
@@ -41,23 +44,51 @@
 
 body {
   font-family: var(--font-global);
+  background-color: var(--pale-blue);
   align-content: center;
   height: 100vh;
   font-size: 18px;
 }
 
 section {
-  background-color: blue;
   display: flex;
   justify-content: center;
 }
 
 #card {
-  background-color: var(--light-red);
   width: 700px;
   display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: var(--white);
 }
 
 #card > div {
   width: 50%;
+}
+
+#result {
+  background: var(--gradient);
+  border-radius: 30px;
+}
+
+#summary {
+  padding: 2em;
+}
+
+/* button */
+#continue {
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+
+  padding: 1em;
+  width: 100%;
+  border-radius: 30px;
+  border: 0;
+  font-weight: bold;
+}
+
+#continue:hover {
+  background: var(--gradient);
+  cursor: pointer;
 }
