@@ -22,3 +22,33 @@ section {
   background-color: red;
   width: 50%;
 }
+
+
+
+
+
+.alert{
+  border: solid 1px black;
+  border-radius: 3px;
+  background-color: bisque;
+  margin: 40px 0 40px 0;
+  width: 3.5em;
+  text-align: center;
+  
+  animation: init 1s infinite, back 2s 3s infinite;
+
+}
+
+.alert h6{
+  font-size: 15px;
+
+}
+
+@keyframes init{
+  from{
+    transform: translate(-100%);
+  }
+  to{
+    transform: translate(0);
+  }
+}
