@@ -1,0 +1,26 @@
+@media (width < 570px) {
+    #card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #card > div {
+        width: 100%;
+    }
+}
+
+@media (width > 570px) {
+    #card > div {
+        width: 50%;
+    }
+
+    #card {
+        width: 700px;
+    }
+}
+
+@media (width < 400px) {
+    #card {
+        width: 100%;
+    }
+}
