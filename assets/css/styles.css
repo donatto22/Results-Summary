@@ -1,4 +1,10 @@
+/* Hanken Grotesk */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
+  /* fuente de letra */
+  --font-global: "Hanken Grotesk", sans-serif;
+  
   /* primarios */
   --light-red: hsl(0, 100%, 67%);
   --orangey-yellow: hsl(39, 100%, 56%);
@@ -34,6 +40,7 @@
 }
 
 body {
+  font-family: var(--font-global);
   align-content: center;
   height: 100vh;
 }
