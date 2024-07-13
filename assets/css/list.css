@@ -1,12 +1,15 @@
 /* estilando las listas */
 #summary ul {
-    margin: 1em 0;
+    margin: 2em 0;
 }
 
 #summary ul li {
     padding: 12px 20px;
     border-radius: 10px;
     list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 #summary ul li:not(:last-child) {

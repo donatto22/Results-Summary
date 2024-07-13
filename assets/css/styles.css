@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('./list.css');
+@import url('./responsive.css');
 
 :root {
   /* fuente de letra */
@@ -9,16 +10,14 @@
 
   /* primarios */
   --light-red: #ff5757;
+  --light-blue: #CAC9FF;
   --orangey-yellow: #ffb01f;
   --green-teal: #00bd91;
   --cobalt-blue: #1125d4;
 
-  /* primarios del fondo de cada item de la lista */
-  --red: #E7E7E7;
-
-
   /* gradientes */
   --gradient: linear-gradient(#7755FF 0%, #6943FF 0%, #2F2CE9 100%);
+  --circle: linear-gradient(#4D21C9 0%, #2421c900 100%, #2421c900 100%);
 
   /* neutrales */
   --white: hsl(0, 0%, 100%);
@@ -61,15 +60,24 @@ section {
   border-radius: 30px;
   overflow: hidden;
   background-color: var(--white);
-}
-
-#card > div {
-  width: 50%;
+  align-items: center;
 }
 
 #result {
   background: var(--gradient);
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+  gap: 1.4em;
+
+  color: var(--light-blue);
+}
+
+#result h3 {
+  color: var(--light-blue);
 }
 
 #summary {
@@ -81,14 +89,47 @@ section {
   background-color: var(--dark-gray-blue);
   color: var(--white);
 
-  padding: 1em;
+  padding: 1em 0;
   width: 100%;
   border-radius: 30px;
   border: 0;
   font-weight: bold;
+  font-size: 18px;
 }
 
 #continue:hover {
   background: var(--gradient);
   cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  gap: 10px;
+}
+
+#circle {
+  --medida: 200px;
+  background: var(--circle);
+  border-radius: 50%;
+  width: var(--medida);
+  height: var(--medida);
+  text-align: center;
+  align-content: center;
+}
+
+#bignumber {
+  font-size: 72px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+#description {
+  width: 70%;
+  text-align: center;
+}
+
+#description h3 {
+  margin-bottom: .2em;
+  font-size: 32px;
+  color: var(--white)
 }
