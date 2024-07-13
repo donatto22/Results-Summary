@@ -4,7 +4,7 @@
 :root {
   /* fuente de letra */
   --font-global: "Hanken Grotesk", sans-serif;
-  
+
   /* primarios */
   --light-red: hsl(0, 100%, 67%);
   --orangey-yellow: hsl(39, 100%, 56%);
@@ -43,6 +43,7 @@ body {
   font-family: var(--font-global);
   align-content: center;
   height: 100vh;
+  font-size: 18px;
 }
 
 section {
@@ -54,4 +55,9 @@ section {
 #card {
   background-color: var(--light-red);
   width: 700px;
+  display: flex;
+}
+
+#card > div {
+  width: 50%;
 }
